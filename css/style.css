@@ -1,0 +1,328 @@
+:root {
+    /* Colors */
+    --primary-color: #784D3c;
+    --white-color: #ffffff;
+    --black-color: #000000;
+    /* Fonts */
+    --primaryFont: 'PT Sans', sans-serif; ;
+    --secundaryFont: 'Open Sans', sans-serif;
+}
+
+/* Responsive Design */
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;    
+}
+
+*, *:before, *:after { box-sizing: inherit; }
+
+/* Globals */
+body { 
+    line-height: 1.5; 
+    font-size: 1.6rem;
+    font-family: var(--secundaryFont);
+}
+
+p { font-size: 1.8rem; }
+
+li { list-style: none; }
+
+a { text-decoration: none; }
+
+img { width: 100%; }
+
+h1, h2, h3, h4 {
+    font-family: var(--primaryFont);
+    margin: 0;
+    line-height: 1.2;
+}
+
+h1 { font-size: 6rem; }
+h2 { font-size: 4rem; }
+h3 { font-size: 3rem; }
+h4 { font-size: 2.6rem; }
+
+/* Utility Classes */
+.container {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+
+.text-center { text-align: center; }
+
+/* Header */
+.webp .header {
+    background-image: url(../img/banner.webp);
+}
+.no-webp .header {
+    background-image: url(../img/banner.jpg);
+}
+.header {
+    min-height: 55rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.header__text {
+    text-align: center;
+    color: var(--white-color);
+    margin-top: 14rem;
+    padding-bottom: 5rem;
+}
+
+/* NavBar */
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2.5rem;
+}
+
+.navBar__brand { color: var(--white-color); }
+
+.brand { font-weight: 300; }
+
+.navBar__brand span{ font-weight: 700; }
+
+.navigation {
+    display: flex;
+    gap: 2rem;
+}
+
+.navigation__link {
+    font-size: 2.4rem;
+    color: var(--white-color);
+    transition: all 200ms ease;
+}
+
+.navigation__link-active { font-weight: bold; }
+
+@media (max-width: 768px) {
+    .navBar {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .navigation {
+        margin-top: 3rem;
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .navigation__link {
+        font-size: 2.2rem;
+    }
+
+    .header__text {
+        margin-top: 6rem;
+    }
+}
+
+/* Main Content */
+.main-content__title { margin-block: 3rem; }
+
+@media (min-width: 768px) {
+    .main-grid {
+        display: grid;
+        grid-template-areas: "main-content sidebar";
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }
+    .main-content { grid-area: main-content; }
+
+    .sidebar { grid-area: sidebar; }
+    
+}
+    /* Entries */
+    .entry { 
+        margin-bottom: 3rem; 
+        border-bottom: .2rem solid rgb(39, 27, 27);
+    }
+
+    .entry:last-of-type { 
+        margin: 0;
+        border: none;
+    }
+
+    .entry h4, .entry p { margin-block: 1rem; }
+
+    .button {
+        display: block;
+        padding: 1rem; 
+        font-family: var(--primaryFont);
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+        color: var(--white-color);
+    }
+    .entry__button { 
+        background-color: var(--black-color); 
+        border-top-right-radius: .5rem;
+        border-top-left-radius: .5rem;
+    }
+
+    @media (min-width: 768px) {
+        .button { max-width: 20rem; }
+
+        .entry__button { 
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;   
+        }
+    }
+/* Sidebar */
+.sidebar__title { margin-block: 3rem; }
+
+.shop-item { 
+    margin-bottom: 4rem;
+    border: .2rem solid var(--primary-color); 
+    padding: 2rem;
+}
+
+.shop-item p { font-weight: bold; }
+
+.shop-item p span { font-weight: normal; }
+
+.shop-item *:not(:last-child) { margin-bottom: 2rem; }
+
+.shop-item__button { 
+    background-color: var(--primary-color); 
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+@media (min-width: 768px) {
+    .shop-item { 
+        border: none; 
+        padding: 0;
+    }
+
+    .shop-item__button { border-radius: 1rem; }
+}
+
+/* Footer */
+.footer {
+    margin-top: 5rem;
+    padding: 4rem 0;
+    background-color: var(--black-color);
+}
+
+/* About */
+.about-title { margin-block: 4rem; }
+
+.about__text { font-size: 1.6rem; }
+
+.about__img { margin-bottom: 1rem; }
+
+@media (min-width: 768px) {
+    .about-title { text-align: center; }
+    .about-grid {
+        display: grid;
+        grid-template-areas: "img txt";
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+    .about__img { grid-area: img; }
+    .about__text { grid-area: txt; }
+}
+
+@media (min-width: 992px) {
+    .about__text { font-size: 1.9rem; }
+}
+
+/* Courses */
+.courses-title, .about-title, .entry-title, .contact-title { 
+    text-align: center; 
+    margin-block: 4rem;
+}
+
+.courses-container { 
+    display: grid; 
+    row-gap: 4rem;
+}
+
+@media (min-width: 768px) {
+    .courses-grid {
+        display: grid;
+        grid-template-areas: "img txt";
+        grid-template-columns: 1fr 2fr;
+        gap: 2rem;
+    }
+}
+
+.course p:not(:last-child) { font-weight: bold; }
+
+.course p span { font-weight: normal; }
+
+.course *:not(:last-child) { margin-bottom: 2rem; }
+
+/* Entry */
+.entry__text { margin-bottom: 2rem; }
+
+/* Contact */
+.webp .contact-bg {
+    background-image: url(../img/contacto.webp);
+}
+.no-webp .contact-bg {
+    background-image: url(../img/contacto.jpg);
+}
+.contact-bg { 
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.contact-form {
+    background-color: var(--white-color);
+    margin: -4rem auto 0 auto;
+    box-shadow: 1.5px 0.5px 8px black;
+    width: 95%;
+    padding: 3rem;
+    border-radius: .6rem;
+}
+
+.ground {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.ground__label {
+    flex: 0 0 8rem;
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-align: right;
+}
+
+.ground__field {
+    width: 2rem;
+    padding: 1rem;
+    border: 1px solid gray;
+    flex: 1;
+}
+
+.campo__field--textarea {
+    min-height: 10rem;
+}
+
+.contact--button {
+    border: unset;
+    background-color: var(--black-color);
+    cursor: pointer;
+    border-radius: .5rem;
+    width: 15rem;
+}
+
+@media (max-width: 768px) {
+    .ground { 
+        gap: 1rem;   
+    }
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang='es'>
+    <!-- Head -->
+    <head>
+        <!-- Metadatos -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="SEO description">
+        <meta name="keywords" content="HTML, CSS, Java Script, React">
+        <meta name="robot" content="index, follow">
+
+        <!-- Título -->
+        <title>Coffee Blog ☕</title>
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="./img/logo.png">
+
+        <!-- Prefetch -->
+        <link rel="prefetch" href="courses.html" as="document">
+
+        <!-- Styles -->
+        <link rel="preload" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" as="style">
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+        <link rel="preload" href="css/style.css" as="style">
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Fonts -->
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" crossorigin="crossorigin" as='font'>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="navBar">
+                    <a class="navBar__brand" href="index.html"><h1 class="brand">Blog<span>DeCafé</span></h1></a>
+                    <nav class="navigation">
+                        <a class="navigation__link" href="about.html">About</a>
+                        <a class="navigation__link" href="courses.html">Courses</a>
+                        <a class="navigation__link" href="contact.html">Contact</a>
+                    </nav>
+                </div>
+                <div class="header__text">
+                    <h2>Coffee Blog with courses and advices</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus aperiam.</p>
+                </div>
+            </div>
+        </header>
+        <!-- Main -->
+        <main class="container">
+            <!-- Courses -->
+            <section class="courses-container">
+                <h2 class="courses-title">Upcoming courses and Workshops</h2>
+                <article class="course courses-grid">
+                    <div class="course__img">
+                        <picture>
+                            <picture>
+                                <source loading="lazy" srcset="./img/curso1.webp" type="image/webp">
+                                <img src="./img/curso1.jpg" alt="blog image" loading="lazy">
+                            </picture>
+                        </picture>
+                    </div>
+                    <div class="course__text">
+                        <h3>The Art of Brewing: Exploring Coffee Excellence</h3>
+                        <p>Price: <span>free</span></p>
+                        <p>Cupo: <span>20</span></p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam corporis, laboriosam sequi ex nemo dignissimos, minima vero reprehenderit unde molestiae mollitia voluptates ut quae nobis ipsam ab, porro dolor amet? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, magnam velit eveniet aut inventore mollitia neque totam dolorum, accusamus odio repudiandae.</p>
+                    </div>
+                </article>
+                <article class="course courses-grid">
+                    <div class="course__img">
+                        <picture>
+                            <source loading="lazy" srcset="./img/curso2.webp" type="image/webp">
+                            <img src="./img/curso2.jpg" alt="blog image" loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="course__text">
+                        <h3>Coffee Culture: From Bean to Brew</h3>
+                        <p>Price: <span>free</span></p>
+                        <p>Cupo: <span>20</span></p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam corporis, laboriosam sequi ex nemo dignissimos, minima vero reprehenderit unde molestiae mollitia voluptates ut quae nobis ipsam ab, porro dolor amet? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, magnam velit eveniet aut inventore mollitia neque totam dolorum, accusamus odio repudiandae.</p>
+                    </div>
+                </article>
+                <article class="course courses-grid">
+                    <div class="course__img">
+                        <picture>
+                            <source loading="lazy" srcset="./img/curso3.webp" type="image/webp">
+                            <img src="./img/curso3.jpg" alt="blog image" loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="course__text">
+                        <h3>A World of Aromas: Coffee Tasting Adventures</h3>
+                        <p>Price: <span>free</span></p>
+                        <p>Cupo: <span>20</span></p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam corporis, laboriosam sequi ex nemo dignissimos, minima vero reprehenderit unde molestiae mollitia voluptates ut quae nobis ipsam ab, porro dolor amet? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, magnam velit eveniet aut inventore mollitia neque totam dolorum, accusamus odio repudiandae.</p>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="navBar container">
+                <a class="navBar__brand" href="index.html"><h1 class="brand">Blog<span>DeCafé</span></h1></a>
+                <nav class="navigation">
+                    <a class="navigation__link" href="about.html">About</a>
+                    <a class="navigation__link" href="courses.html">Courses</a>
+                    <a class="navigation__link" href="contact.html">Contact</a>
+                </nav>
+            </div>
+        </footer>
+        <!-- Script -->
+        <link rel="preload" href="./js/main.js" as="script">
+        <script src="./js/main.js"></script>
+        <script src="./js/modernizr.js"></script>
+    </body>
+</html>

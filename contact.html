@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang='es'>
+    <!-- Head -->
+    <head>
+        <!-- Metadatos -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="SEO description">
+        <meta name="keywords" content="HTML, CSS, Java Script, React">
+        <meta name="robot" content="index, follow">
+
+        <!-- Título -->
+        <title>Coffee Blog ☕</title>
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="./img/logo.png">
+
+        <!-- Prefetch -->
+        <link rel="prefetch" href="courses.html" as="document">
+
+        <!-- Styles -->
+        <link rel="preload" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" as="style">
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+        <link rel="preload" href="css/style.css" as="style">
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Fonts -->
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" crossorigin="crossorigin" as='font'>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="navBar">
+                    <a class="navBar__brand" href="index.html"><h1 class="brand">Blog<span>DeCafé</span></h1></a>
+                    <nav class="navigation">
+                        <a class="navigation__link" href="about.html">About</a>
+                        <a class="navigation__link" href="courses.html">Courses</a>
+                        <a class="navigation__link" href="contact.html">Contact</a>
+                    </nav>
+                </div>
+                <div class="header__text">
+                    <h2>Coffee Blog with courses and advices</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus aperiam.</p>
+                </div>
+            </div>
+        </header>
+        <!-- Main -->
+        <main class="container">
+            <!-- Contact -->
+            <h2 class="contact-title">Contact</h2>
+            <div class="contact-bg"></div>
+            <form class="contact-form" action="">
+                <div class="ground">
+                    <label for="name" class="ground__label">Name: </label>
+                    <input
+                        class="ground__field" 
+                        type="text" 
+                        placeholder="name here" 
+                        id="name" 
+                        required
+                    >
+                </div>
+                <div class="ground">
+                    <label for="email" class="ground__label">Email: </label>
+                    <input
+                        class="ground__field" 
+                        type="email" 
+                        placeholder="email here" 
+                        id="email" 
+                        required
+                    >
+                </div>
+                <div class="ground">
+                    <label for="msg" class="ground__label">Message: </label>
+                    <textarea
+                        class="ground__field campo__field--textarea" 
+                        id="msg" 
+                        placeholder="message here (max lenght 2000)"
+                        maxlength="2000"
+                        required
+                    ></textarea>
+                </div>
+                <div class="ground">
+                    <input type="submit" value="Send" class="button contact--button">
+                </div>
+            </form>
+        </main>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="navBar container">
+                <a class="navBar__brand" href="index.html"><h1 class="brand">Blog<span>DeCafé</span></h1></a>
+                <nav class="navigation">
+                    <a class="navigation__link" href="about.html">About</a>
+                    <a class="navigation__link" href="courses.html">Courses</a>
+                    <a class="navigation__link" href="contact.html">Contact</a>
+                </nav>
+            </div>
+        </footer>
+        <!-- Script -->
+        <link rel="preload" href="./js/main.js" as="script">
+        <script src="./js/main.js"></script>
+        <script src="./js/modernizr.js"></script>
+    </body>
+</html>

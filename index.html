@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+    <!-- Head -->
+    <head>
+        <!-- Metadatos -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Coffee Blog web page">
+        <meta name="keywords" content="Blog, Coffee, Web Page">
+        <meta name="robot" content="index, follow">
+
+        <!-- Título -->
+        <title>Coffee Blog ☕</title>
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="./img/logo.png">
+
+        <!-- Prefetch -->
+        <link rel="prefetch" href="courses.html" as="document">
+
+        <!-- Styles -->
+        <link rel="preload" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" as="style">
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+        <link rel="preload" href="css/style.css" as="style">
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Fonts -->
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" crossorigin="crossorigin" as='font'>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="navBar">
+                    <a class="navBar__brand" href="index.html"><h1 class="brand">Blog<span>DeCafé</span></h1></a>
+                    <nav class="navigation">
+                        <a class="navigation__link" href="about.html">About</a>
+                        <a class="navigation__link" href="courses.html">Courses</a>
+                        <a class="navigation__link" href="contact.html">Contact</a>
+                    </nav>
+                </div>
+                <div class="header__text">
+                    <h2>Coffee Blog with courses and advices</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus aperiam.</p>
+                </div>
+            </div>
+        </header>
+        <!-- Main -->
+        <main class="container main-grid">
+            <!-- Main Content -->
+            <section class="main-content">
+                <h3 class="main-content__title">Our Blog</h3> 
+                <article class="entry">
+                    <div class="entry__img">
+                        <picture>
+                            <source loading="lazy" srcset="./img/blog1.webp" type="image/webp">
+                            <img src="./img/blog1.jpg" alt="blog image" loading="lazy">
+                        </picture>
+                    </div>
+                    <h4>Types of coffee bean.</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dolorem atque deserunt architecto nulla dolorum harum, ratione, rem, repellat cum iure minima eos soluta odio id! Facilis minus nisi reiciendis?</p>
+                    <a class="button entry__button" href="entry.html">Read More</a>
+                </article>
+                <article class="entry">
+                    <div class="entry__img">
+                        <picture>
+                            <source loading="lazy" srcset="./img/blog2.webp" type="image/webp">
+                            <img src="./img/blog2.jpg" alt="blog image" loading="lazy">
+                        </picture>
+                    </div>
+                    <h4>The Science Behind Espresso: Perfecting Your Shot</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dolorem atque deserunt architecto nulla dolorum harum, ratione, rem, repellat cum iure minima eos soluta odio id! Facilis minus nisi reiciendis?</p>
+                    <a class="button entry__button" href="entry.html">Read More</a>
+                </article>
+                <article class="entry">
+                    <div class="entry__img">
+                        <picture>
+                            <source loading="lazy" srcset="./img/blog3.webp" type="image/webp">
+                            <img src="./img/blog3.jpg" alt="blog image" loading="lazy">
+                        </picture>
+                    </div>
+                    <h4>The Art of Coffee Brewing: Unlocking Flavor and Aroma</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dolorem atque deserunt architecto nulla dolorum harum, ratione, rem, repellat cum iure minima eos soluta odio id! Facilis minus nisi reiciendis?</p>
+                    <a class="button entry__button" href="entry.html">Read More</a>
+                </article>
+            </section>  
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <h3 class="sidebar__title">Courses and Workshops</h3>
+                <section class="sidebar-content">
+                    <article class="shop-item">
+                        <h4>Coffee extraction techniques.</h4>
+                        <p>Precio: <span class="static">Free</span></p>
+                        <p>Cupo: <span class="static">20</span></p>
+                        <a class="button shop-item__button" href="courses.html">More Info</a>
+                    </article>
+                    <article class="shop-item">
+                        <h4>Exploring the World of Coffee: Coffee Basics Course</h4>
+                        <p>Precio: <span class="static">Free</span></p>
+                        <p>Cupo: <span class="static">20</span></p>
+                        <a class="button shop-item__button" href="courses.html">More Info</a>
+                    </article>
+                    <article class="shop-item">
+                        <h4>Latte Art: Creative Coffee Design Workshop</h4>
+                        <p>Precio: <span class="static">Free</span></p>
+                        <p>Cupo: <span class="static">20</span></p>
+                        <a class="button shop-item__button" href="courses.html">More Info</a>
+                    </article>
+                </section>
+            </aside>
+        </main>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="navBar container">
+                <a class="navBar__brand" href="index.html"><h1 class="brand">Blog<span>DeCafé</span></h1></a>
+                <nav class="navigation">
+                    <a class="navigation__link" href="about.html">About</a>
+                    <a class="navigation__link" href="courses.html">Courses</a>
+                    <a class="navigation__link" href="contact.html">Contact</a>
+                </nav>
+            </div>
+        </footer>
+        <!-- Script -->
+        <link rel="preload" href="./js/main.js" as="script">
+        <script src="./js/main.js"></script>
+        <script src="./js/modernizr.js"></script>
+    </body>
+</html>
